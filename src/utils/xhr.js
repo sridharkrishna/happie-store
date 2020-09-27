@@ -1,10 +1,5 @@
 import store from '../store'
 
-// These are "fake network" function that in a real scenario would
-// call the backend API and upon return would update your redux state.
-// We're just going to skip to the redux part and add a setTimeout
-// for some fake latency
-
 export const getLoggedUser = () => {
   setTimeout(() => {
     store.dispatch({

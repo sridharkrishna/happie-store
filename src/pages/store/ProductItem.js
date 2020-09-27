@@ -21,7 +21,7 @@ const ProductItem = ({product}) => {
        
           <Link to="/cart"
             onClick={() => addProduct(product)}
-            className="btn btn-outline-secondary btn-sm mr-2">Checkout</Link>
+            className="btn btn-outline-secondary btn-sm mr-2">Buy Now</Link>
           
           {
             isInCart(product) && 
