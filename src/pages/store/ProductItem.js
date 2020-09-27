@@ -18,8 +18,11 @@ const ProductItem = ({product}) => {
         <p>{product.name}</p>
         <h3 className="text-left">{formatNumber(product.price)}</h3>
         <div className="text-right">
-          <Link  to="/" className="btn btn-link btn-sm mr-2">Details</Link>
-
+       
+          <Link to="/cart"
+            onClick={() => addProduct(product)}
+            className="btn btn-outline-secondary btn-sm mr-2">Checkout</Link>
+          
           {
             isInCart(product) && 
             <button 
